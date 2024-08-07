@@ -17,7 +17,6 @@ public class ChatMemberService {
 
     public ChatMember createChatMember(User user, Chat chat){
         ChatMember chatMember= new ChatMember(user,chat);
-
         return chatMemberRepo.save(chatMember);
     }
 

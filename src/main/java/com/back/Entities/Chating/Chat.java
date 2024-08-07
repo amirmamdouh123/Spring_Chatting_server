@@ -15,7 +15,7 @@ import java.util.List;
 @Setter
 @Getter
 @NoArgsConstructor
-public class Chat {
+public class Chat implements IChat{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,6 +32,11 @@ public class Chat {
 
     public void addMessage(Message message){
         messages.add(message);
+    }
+
+
+    public void StringMessage(String message){
+        System.out.println(message);
     }
 
 
